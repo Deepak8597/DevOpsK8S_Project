@@ -1,6 +1,6 @@
-FROM ubuntu:latest
+FROM centos:latest
 MAINTAINER deepakkumardas818@gmail.com
-RUN apt-get install apache2 \
+RUN yum install -y httpd \
     zip\
     unzip
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page280/klassy-cafe.zip /var/www/html/
