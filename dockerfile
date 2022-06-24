@@ -9,4 +9,4 @@ RUN unzip klassy-cafe.zip
 RUN cp -rvf klassy-cafe/*
 RUN rm -rf klassy-cafe klassy-cafe.zip
 CMD [ "/usr/sbin/httpd", "-D", "FOREGROUND" ]
-EXPOSE 80
+EXPOSE 80 22
